@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  webapp:
+    image: ghcr.io/willtheorangeguy/shc-covid19-decoder-docker:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
